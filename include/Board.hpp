@@ -12,6 +12,8 @@ struct Piece {
 class Board {
 private:
     Piece board[8][8];
+    bool isRookPathClear(int startX,  int startY, int endX, int endY) const;
+    bool isRookMoveValid(int startX,  int startY, int endX, int endY) const;
 public:
     Board();
     void setupDefaultBoard();
